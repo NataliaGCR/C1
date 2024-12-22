@@ -1,4 +1,3 @@
-% Parámetros de ΣΔ
 N = 10;       
 Vmin = 0;    
 Vmax = 255;  
@@ -17,7 +16,6 @@ M = zeros(height, width);
 V = zeros(height, width);
 motion_mask = zeros(height, width);
 
-% Leer todas las imágenes
 images = zeros(height, width, num_images, 'uint8');
 for k = 1:num_images
     img = imread(sprintf('image_%03d.jpg', k));
