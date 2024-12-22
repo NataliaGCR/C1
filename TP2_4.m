@@ -14,9 +14,9 @@ images_v = zeros(height, width, num_images, 'double');
 
 for k = 1:num_images
     img = imread(sprintf('image_%03d.jpg', k));
-    hsv_img = rgb2hsv(img); % Conversion en HSV
-    images_s(:, :, k) = hsv_img(:, :, 2); % Canal S (saturation)
-    images_v(:, :, k) = hsv_img(:, :, 3); % Canal V (brillance)
+    hsv_img = rgb2hsv(img);
+    images_s(:, :, k) = hsv_img(:, :, 2);
+    images_v(:, :, k) = hsv_img(:, :, 3);
 end
 
 figure;
