@@ -1,5 +1,3 @@
-% BUENO
-
 num_images = 600;     
 window_size = 5;        
 alpha_s = 1.3;         
