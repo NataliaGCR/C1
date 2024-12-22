@@ -18,7 +18,7 @@ for k = 2:num_frames
     if ismember(k, frames_of_interest)
         img = flowToColor(u, v);
         
-        subplot(2, 2, subplot_index); % 2x2 subplots
+        subplot(2, 2, subplot_index);
         imshow(img);
         title([num2str(k)]);
         
