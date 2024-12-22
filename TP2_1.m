@@ -1,5 +1,3 @@
-%BUENO
-
 num_images = 300;
 alpha = 0.5; 
 
@@ -53,7 +51,7 @@ for k = 1:num_images
     mask = abs(current_img - mean_img) > alpha * std_img;
     
     if ismember(k, images_to_display)
-        subplot(2, 2, subplot_idx); % 2x2 grid de subplots
+        subplot(2, 2, subplot_idx);
         imshow(mask, []); 
         title(sprintf('Image %d', k));
         subplot_idx = subplot_idx + 1;
