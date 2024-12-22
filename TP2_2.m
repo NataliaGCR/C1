@@ -1,5 +1,3 @@
-%BUENO
-
 num_images = 600; 
 window_size = 25;
 alpha = 0.2;
@@ -33,7 +31,6 @@ for k = 1:num_images
     std_img = std(subset_images, 0, 3);
    
     mask = abs(images(:, :, k) - mean_img) > alpha * std_img;
-    %mask = std_img > T;
     
     if ismember(k, images_to_display)
         subplot(2, 2, subplot_idx);
