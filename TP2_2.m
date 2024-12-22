@@ -43,5 +43,4 @@ for k = 1:num_images
     end
 end
 
-% Ajustar la figura para una mejor visualización
 sgtitle('alpha = 0.2');
